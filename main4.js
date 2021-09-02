@@ -76,6 +76,12 @@ function createStudent({
         },
 
     };
+
+    Object.defineProperty(public, "readName", {
+        configurable: false,
+        writable: false, //Nos sirve para proteger nuestra propiedad readName.
+    })
+
     return public;
 }
 
