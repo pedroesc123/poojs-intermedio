@@ -50,7 +50,7 @@ function isObject(subject) {
       "_name": name,
       "_courses": courses,
     };
-  
+
     const public = {
       get name() {
         return private["_name"];
